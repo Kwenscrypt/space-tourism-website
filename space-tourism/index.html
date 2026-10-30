@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism</title>
+    <!-- Fonturi pentru look apropiat de design -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Barlow+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="bg-home">
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Home"
+        ><img src="./assets/shared/logo.svg"
+      /></a>
+      <button class="hamburger" aria-expanded="false" aria-controls="mainnav">
+        <span></span><span></span><spann></spann>
+      </button>
+      <nav id="mainnav" class="main-nav" aria-label="Primary">
+        <ol>
+          <li>
+            <a data-route="home" href="#/home"><b>00</b> Home</a>
+          </li>
+          <li>
+            <a data-route="destination" href="#/destination"
+              ><b>01</b> Destination</a
+            >
+          </li>
+          <li>
+            <a data-route="crew" href="#/crew"><b>02</b> Crew</a>
+          </li>
+          <li>
+            <a data-route="technology" href="#/technology"
+              ><b>03</b> Technology</a
+            >
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <main id="app" class="app" tabindex="-1" aria-live="polite">
+      <!-- Continut redat dinamic -->
+    </main>
+
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
